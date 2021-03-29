@@ -1,0 +1,578 @@
+body
+{
+  font-family: Helvetica, sans-serif; 
+}
+
+/* homepage ui */
+.Homepage {
+  position: absolute;
+  width: 100%;
+  // height: 100%;
+  background-color: #1c272b;
+  .headingAndLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 20%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+      margin-top: 0;
+    }
+  }
+  .httpRequest {
+    overflow-wrap: break-word;
+  }
+  #response-area {
+    width: 99.2%;
+    overflow: auto;
+    height: 25%;
+    // background-color: red;
+  }
+  .container {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .spaceshipImage {
+    width: 40%;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+    box-shadow: none;
+    color: #fff;
+    background-color: #ff6c37;
+    border-color: #ff6c37;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .form-container {
+    margin-left: 10%;
+    width: 80%;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 3%;
+
+    input {
+      background: none;
+      border: none;
+      border-bottom: solid 1px #ff6c37;
+      height: 1.2rem;
+      margin: 2px 0;
+    }
+
+    .input-field {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .info {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 36px;
+  }
+}
+.header-input-container
+{
+  background-color:#f5f5f5;
+  padding-top: 4px; 
+  margin-block-end: 0.4rem;
+}
+.header-input-container input
+{
+  width: 30%;
+  padding: 0.7rem;
+}
+.form-section
+{
+  margin-top: 0px;
+  border-bottom: solid 1px;
+  padding-top: 12px;
+  background-color: #fafafa;
+  display: flex;
+  .saveButton{
+    width: 10%;
+    height: 2.3rem;
+    font-weight: bold;
+    color: #898989;
+    cursor: pointer;
+    background-color: #ececec;
+    border: none;
+    border-radius: 3%;
+  }
+}
+.add-header 
+{
+  padding: 0.7rem;
+  background-color:#978e8e;
+  box-shadow: none;
+  border-radius: 5%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: solid 1px;
+}
+.url-title
+{
+  border-top: solid 1px;
+  border-bottom: solid 0.1px;
+  background-color: #fafafa;
+  padding: 10px;
+}
+.response-label
+{
+ 
+  background-color: #f5f5f5;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding:10px;
+}
+.remove-header
+{
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    opacity: 0.5;
+}
+.remove-header:hover{
+  opacity: 1;
+}
+/* DashBoard UI*/
+.httpRequest .react-tabs__tab-list {
+  margin: 0 0 0px;
+    padding: 0px;
+    height: 40px;
+    background-color: #f2f2f2;
+}
+
+.httpRequest .react-tabs__tab--selected 
+{
+border-radius: 5px 5px 0px 0px;
+border-bottom: solid 3px #ff5100;
+padding-bottom: 0px;
+}
+main {
+  height: 100%;
+
+  .postmanImage {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    background-color: #1c272b;
+    position: relative;
+    img{
+      width: 10%;
+    }
+    .signoutButton {
+      position: absolute;
+      top: 13%;
+      right: 4rem;
+      background-color: #ff6c37;
+      border: none;
+      border-radius: 5%;
+      margin-top: 12px;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 4px;
+    }
+  }
+
+  .sidebarAndHttpRequestContainer {
+    min-height: 100%;
+    display: flex;
+
+    .sidebar {
+      width: 20%;
+      max-width: 20%;
+      border: solid 0.5px black;
+    }
+
+    .httpRequest {
+      width: 80%;
+      max-width: 80%;
+      border: solid 0.5px black;
+    }
+  }
+  .body-raw-input {
+    min-height: 173px;
+    width: 100%;
+  }
+  .test-tab
+  {
+    min-height:173px;
+  width: 100%;
+  }
+  
+  .header-body-nav
+  {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    background-color:#f5f5f5;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .header-body-tab {
+    height: 100%;
+    width: 25%;
+    background: none;
+    box-shadow: none;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    // margin-bottom: 1rem;
+  }
+
+  .react-tabs__tab {
+    width: 33%;
+  }
+  .react-tabs__tab-list {
+    display: flex;
+  }
+  .historyAndCollection {
+    width: 100%;
+
+    button {
+      width: 50%;
+      background: none;
+      box-shadow: none;
+      border: none;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+  }
+
+  .httpRequest .urlArea {
+    max-width: 100%;
+    form {
+      width: 88%;
+      margin-left: 1rem;
+
+      .inputUrl {
+        width: 77%;
+        height: 2.1rem;
+        border-radius: 3%;
+        border: solid 1px #d4d4d4;
+        background-color: #ececec;
+        margin-bottom: 1rem; 
+        padding-left: 10px; 
+      }
+      .inputUrl:hover
+      {
+        background-color:white; 
+      }
+      select {
+        width: 9%;
+        height: 2.3rem;
+        border-radius: 3%;
+        border: solid 1px #d4d4d4;
+        background-color: #ececec
+      }
+
+      .sendButton {
+        margin-left: 1%;
+        width: 10%;
+        height: 2.3rem;
+        background: #097bed;
+        box-shadow: none;
+        border-radius: 5%;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}
+.collectionText{
+  margin: 5% 10%;
+}
+#collection{
+  width: 80%;
+  height: 2rem;
+  margin-left: 10%;
+}
+
+// collection tab ui
+.collectionTab {
+  .newCollectionButton {
+    border: none;
+    border-bottom: solid 0.6px silver;
+    width: 99.8%;
+    height: 2.4rem;
+    text-align: initial;
+    padding-left: 30px;
+    color: #ff6c37;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+}
+.urlStyle{
+  max-width: 80%;
+  width: 80%;
+}
+// collection modal ui
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 10px 0;
+  div {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+}
+.modalBody {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  input {
+    background: white;
+    margin: 5px;
+    border: none;
+    border-radius: 3%;
+    height: 1.5rem;
+    padding-left: 15px;
+  }
+  input:placeholder-shown {
+    padding-left: 15px;
+  }
+  button {
+    background: #ff6c37;
+    border-radius: 3%;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  textarea {
+    margin: 5px;
+    height: 65%;
+  }
+  label {
+    margin: 5px;
+  }
+}
+
+//collection list UI
+.collectionList {
+  .collectionName {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 0.6px silver;
+    height: 3rem;
+    text-align: initial;
+    padding: 15px;
+    font-size: 17px;
+    p {
+      margin: 0;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .fas {
+      margin-right: 10px;
+    }
+  }
+  .collectionName:hover {
+    background: #f0eee9;
+    .runAndDeleteContainer {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      top: 15px;
+      right: 0px;
+      max-height: 3rem;
+      button {
+        height: 50%;
+        background: none;
+        cursor: pointer;
+        z-index: 99;
+      }
+    }
+  }
+  .collectionRequests {
+    padding: 15px;
+    border-bottom: solid 0.6px silver;
+    background: white;
+  }
+  .runAndDeleteContainer {
+    display: none;
+  }
+}
+
+
+
+// Save to Collection UI
+.saveCollectionHeader{
+  header{
+      background: black;
+      text-align: initial;
+      color: white;
+      height: 1.8rem;
+    }
+    header::before{
+      content: '';
+      padding-left: 1.5rem;
+    }
+}
+.saveCollectionButtonContainer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  button {
+    background: #ff6c37;
+    border-radius: 3%;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .cancelButton{
+    background: silver;
+    border-radius: 3%;
+    border: none;
+    color: black;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.tabListStyle
+{
+  display: flex;
+  justify-content: space-between;
+  color: green;
+  font-weight: bold;
+}
+.tabListButton
+{
+  background: none;
+    border: none;
+    color: red;
+}
+.newTabOpenButton
+{
+  background: none;
+    border: none;
+    font-size: xx-large;
+    color: blue;
+}
+.deleteRequestButton{
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+.runCollectionHeader{
+
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 8%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .runCollectionCloseButton{
+    color: white;
+    border: none;
+    background: none;
+    padding-right: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.sendRequestForCollection{
+  height: 100%;
+  position: relative;
+  .runCollectionUrls{
+    overflow: auto;
+    height: 75%;
+    background: white;
+    margin: 2%
+  }
+  .runCollectionButton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #ff6c37;
+    border-radius: 3%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.handleTitle{
+  width: 100%;
+    background: #eee;
+    border: none;
+    font-size: 1em;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 0.7rem 1.1rem;
+}
+.emptyTabStyle
+{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    font-size: 4vw;
+    font-family: sans-serif;
+}
+

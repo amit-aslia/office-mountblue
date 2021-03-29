@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da729485.chunk.css",
+    "main.js": "/static/js/main.f7fece31.chunk.js",
+    "main.js.map": "/static/js/main.f7fece31.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bafbb70b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bafbb70b.js.map",
+    "static/css/2.79d4e76c.chunk.css": "/static/css/2.79d4e76c.chunk.css",
+    "static/js/2.b6dc4d07.chunk.js": "/static/js/2.b6dc4d07.chunk.js",
+    "static/js/2.b6dc4d07.chunk.js.map": "/static/js/2.b6dc4d07.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.00051ad6f80276902a73ad3eb2394af6.js": "/precache-manifest.00051ad6f80276902a73ad3eb2394af6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.79d4e76c.chunk.css.map": "/static/css/2.79d4e76c.chunk.css.map",
+    "static/css/main.da729485.chunk.css.map": "/static/css/main.da729485.chunk.css.map",
+    "static/media/api-5000.svg": "/static/media/api-5000.162c6fd4.svg",
+    "static/media/postman-logo.svg": "/static/media/postman-logo.02051cd6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bafbb70b.js",
+    "static/css/2.79d4e76c.chunk.css",
+    "static/js/2.b6dc4d07.chunk.js",
+    "static/css/main.da729485.chunk.css",
+    "static/js/main.f7fece31.chunk.js"
+  ]
+}
